@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Ubuntu",sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background: url(back.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card{
+    width: 1600px;
+    text-align: center;
+    border-radius: 250px;
+    overflow: hidden;
+}
+
+.card-header{
+    background: rgba(83, 83, 83, 0.97);
+    padding: 60px 40px;
+}
+
+.pic{
+    display: inline-block;
+    padding: 20px;
+    background: linear-gradient(130deg,#74b9ff, #e66767);
+    margin: auto;
+    border-radius: 50%;
+    background-size:200% 200% ;
+    animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+
+}
+.pic img{
+    display: block;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+}
+
+.name{
+    color: rgb(212, 204, 204);
+    font-size: 80px;
+    font-weight: 800;
+    margin: 0px 0;
+}
+
+.desc{
+    font-size: 50px;
+    color: #e66767 ;
+    font-weight: 800;
+    margin: 40px 0;
+}
+
+.sm{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.sm a{
+    color: white;
+    width: 200px;
+    font-size: 60px;
+    transition: .3s linear;
+}
+
+.sm a:hover{
+    color:#e66767;
+}
+
+.contact-btn{
+    font-size: 50px;
+    display: inline-block;
+    padding: 40px 200px;
+    color: #e66767;
+    border: 2px solid #e66767;
+    border-radius: 6px;
+    transition: .3s linear;
+}
+.contact-btn:hover{
+    background: #e66767;
+    color: #f2f2f2;
+}
+
+.card-footer{
+    background: #f4f4f4;
+    padding: 100px 30px;
+    margin: 40px 0;
+    border-radius: 100px;
+}
+
+.numbers{
+    display: flex;
+    align-items: center;
+}
+
+.item{
+    flex:1;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #e66767;
+}
+
+.item span{
+    display: block;
+    color: #2c3a47;
+    font-size: 50px;
+}
+
+.border{
+    width: 5px;
+    height: 50 px;
+    background: #bbb;
+}
